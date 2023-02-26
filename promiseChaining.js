@@ -53,6 +53,10 @@ getUsername()
     console.log("ERROR>>>", e);
   });
 
+
+//Q. Why Data is called first and then console 1,2,3,4?
+//Ans. console 1,2,3,4 happens only after Promise is no longer pending, has been resolved, after it goes inside .then method.
+
 // getUsername()
 //   .then((data) => {
 //     console.log("1");
